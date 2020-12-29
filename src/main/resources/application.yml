@@ -1,0 +1,16 @@
+server:
+  port: 8088
+
+pacs:
+  # dicom存储路径
+  dcmSavePath: ./tmp/dcm
+  # aetitle,*为任意,注意配置为*需要加单引号,如:'*',如果是指定title则不需要加单引号
+  aetitle: '*'
+  # 要开放的端口,可以多个,英文逗号分隔
+  ports: 105,106
+
+logging:
+  level:
+    com.xwt: info
+  file:
+    name: ./logs/xwtPacs.log
